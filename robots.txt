@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.buzzer-zabezpieczenia.com.pl/sitemap.xml
