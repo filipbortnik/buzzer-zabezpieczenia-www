@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>BUZZER | Montaż alarmów i monitoringu</title>
-  <meta name="description" content="Montaż alarmów, monitoringu i wideodomofonów. Bezpłatna wycena, szybkie terminy i serwis po wdrożeniu.">
+  <meta name="description" content="Montaż alarmów, monitoringu, domofonów i sieci LAN/Wi-Fi. Obsługa osób indywidualnych, firm, biur, hal i placów budowy.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://www.buzzer-zabezpieczenia.com.pl/">
   <meta property="og:type" content="website">
@@ -22,7 +22,7 @@
     "email": "biuro@buzzer-zabezpieczenia.com.pl",
     "url": "https://www.buzzer-zabezpieczenia.com.pl/",
     "areaServed": "Polska",
-    "serviceType": ["Montaż alarmów", "Monitoring CCTV", "Wideodomofony", "Serwis systemów zabezpieczeń", "Pogotowie techniczne weekendowe"]
+    "serviceType": ["Montaż alarmów", "Monitoring CCTV", "Domofony i wideodomofony", "Kontrola dostępu", "Sieci LAN i Wi-Fi", "Spawanie światłowodów", "Pomoc zdalna", "Serwis systemów zabezpieczeń", "Pogotowie techniczne weekendowe"]
   }
   </script>
 </head>
@@ -58,7 +58,7 @@
         <div>
           <span class="kicker">Bezpieczny dom i firma</span>
           <h1>Montaż alarmów i monitoringu z bezpłatną wyceną</h1>
-          <p class="lead">Projektujemy i montujemy systemy zabezpieczeń dla domów, mieszkań i firm. Działamy lokalnie, szybko i z pełnym serwisem po montażu.</p>
+          <p class="lead">Projektujemy i montujemy systemy zabezpieczeń oraz sieci internetowe dla osób indywidualnych, firm, biur, hal magazynowych i placów budowy.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="kontakt.html" data-track="hero_quote">Umów bezpłatną wycenę</a>
             <a class="btn btn-secondary" href="tel:+48573926198" data-track="hero_tel">Zadzwoń: 573 926 198</a>
@@ -69,22 +69,19 @@
             <span class="chip">Projekt pod obiekt klienta</span>
           </div>
         </div>
-        <aside class="hero-card" aria-label="Szybka wycena">
-          <h2>Szybka kwalifikacja projektu</h2>
-          <p class="section-sub">To formularz wstępny. Pełna wycena po rozmowie i wizji lokalnej.</p>
-          <form class="mini-form" action="kontakt.html" method="get" name="quick_form">
+        <aside class="hero-card" aria-label="Formularz kontaktowy">
+          <h2>Formularz kontaktowy</h2>
+          <p class="section-sub">Opisz potrzeby, a wrócimy z kontaktem i proponowanym zakresem prac.</p>
+          <form class="mini-form" action="#" method="post" name="quick_form" data-form-demo>
             <label for="q_name">Imię</label>
             <input id="q_name" type="text" name="imie" placeholder="Imię" required>
             <label for="q_phone">Telefon</label>
             <input id="q_phone" type="tel" name="telefon" placeholder="Telefon" required>
-            <label for="q_object">Typ obiektu</label>
-            <select id="q_object" name="obiekt" required>
-              <option value="">Wybierz</option>
-              <option>Dom</option>
-              <option>Mieszkanie</option>
-              <option>Firma</option>
-            </select>
-            <button class="btn btn-primary" type="submit" data-track="hero_form_to_contact">Przejdź do formularza</button>
+            <label for="q_desc">Opis potrzeb</label>
+            <textarea id="q_desc" name="opis" rows="4" placeholder="Np. biuro 120 m2, alarm + monitoring + sieć Wi-Fi"></textarea>
+            <button class="btn btn-primary" type="submit" data-track="hero_form_submit">Wyślij zapytanie</button>
+            <p class="help">To wersja demonstracyjna. Na produkcji formularz podłącz do API/CRM.</p>
+            <div class="status" role="status" aria-live="polite" data-form-status></div>
           </form>
         </aside>
       </div>
@@ -96,7 +93,7 @@
         <p class="section-sub">Kompletne zabezpieczenia od projektu po uruchomienie i instruktaż.</p>
         <div class="grid-3">
           <article class="card">
-            <h3>Alarmy domowe</h3>
+            <h3>Systemy alarmowe dla domu i firmy</h3>
             <p>Centrala, czujniki, sygnalizacja i aplikacja mobilna zdalnego podglądu.</p>
             <a class="btn btn-secondary" href="alarmy-domowe.html" data-track="service_alarm">Szczegóły</a>
           </article>
@@ -106,9 +103,9 @@
             <a class="btn btn-secondary" href="monitoring-cctv.html" data-track="service_cctv">Szczegóły</a>
           </article>
           <article class="card">
-            <h3>Wideodomofony</h3>
+            <h3>Domofony i wideodomofony</h3>
             <p>Kontrola wejścia, zdalna obsługa i integracja z systemem zabezpieczeń.</p>
-            <a class="btn btn-secondary" href="wideodomofony.html" data-track="service_intercom">Szczegóły</a>
+            <a class="btn btn-secondary" href="domofony.html" data-track="service_intercom">Szczegóły</a>
           </article>
         </div>
       </div>
@@ -189,9 +186,13 @@
           <ul class="footer-links">
             <li><a href="index.html">Strona główna</a></li>
             <li><a href="uslugi.html">Usługi</a></li>
-            <li><a href="alarmy-domowe.html">Alarmy domowe</a></li>
+            <li><a href="alarmy-domowe.html">Systemy alarmowe</a></li>
             <li><a href="monitoring-cctv.html">Monitoring CCTV</a></li>
-            <li><a href="wideodomofony.html">Wideodomofony</a></li>
+            <li><a href="domofony.html">Domofony i wideodomofony</a></li>
+            <li><a href="kontrola-dostepu.html">Kontrola dostępu</a></li>
+            <li><a href="sieci-internetowe-lan-wifi.html">Sieci LAN i Wi-Fi</a></li>
+            <li><a href="spawanie-swiatlowodow.html">Spawanie światłowodów</a></li>
+            <li><a href="pomoc-zdalna.html">Pomoc zdalna</a></li>
             <li><a href="serwis-konserwacja.html">Serwis i konserwacja</a></li>
             <li><a href="pogotowie-weekendowe.html">Pogotowie weekendowe</a></li>
             <li><a href="realizacje.html">Realizacje</a></li>
