@@ -70,6 +70,9 @@ curl -I http://buzzer-zabezpieczenia.pl
 curl -I http://www.buzzer-zabezpieczenia.pl
 ```
 
+SEO baseline (301 + spójna domena + fallback `.html`):
+- przykład konfiguracji: `nginx-seo.example.conf`
+
 ## 6) Deploy i auto-deploy
 Kod produkcyjny jest pobierany z GitHub do:
 - `/var/www/buzzer`
@@ -203,4 +206,3 @@ Rekomendacja:
 - Nginx site: `/etc/nginx/sites-available/buzzer`
 - Nginx enabled: `/etc/nginx/sites-enabled/buzzer`
 - Certbot log: `/var/log/letsencrypt/letsencrypt.log`
-
