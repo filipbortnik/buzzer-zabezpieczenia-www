@@ -73,7 +73,12 @@
 
         <article class="card">
           <h2>Formularz kontaktowy</h2>
-          <form class="mini-form" action="#" method="post" name="lead_form" data-form-demo>
+          <form class="mini-form" action="https://formsubmit.co/biuro@buzzer-zabezpieczenia.com.pl" method="post" name="lead_form">
+            <input type="hidden" name="_subject" value="Nowe zapytanie ze strony BUZZER - Kontakt">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="https://buzzer-zabezpieczenia.pl/dziekujemy.html">
             <label for="f_name">Imię</label>
             <input id="f_name" type="text" name="imie" placeholder="Imię" required>
 
@@ -89,8 +94,7 @@
             </label>
 
             <button class="btn btn-primary" type="submit" data-track="contact_form_submit">Wyślij zapytanie</button>
-            <p class="help">To wersja demonstracyjna. Na produkcji formularz podłącz do API/CRM.</p>
-            <div class="status" role="status" aria-live="polite" data-form-status></div>
+            <p class="help">Po wysłaniu formularza wrócimy z kontaktem najszybciej jak to możliwe.</p>
           </form>
         </article>
       </div>

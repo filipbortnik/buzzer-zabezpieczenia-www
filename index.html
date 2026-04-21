@@ -81,7 +81,12 @@
         <aside class="hero-card" aria-label="Formularz kontaktowy">
           <h2>Formularz kontaktowy</h2>
           <p class="section-sub">Opisz potrzeby, a wrócimy z kontaktem i proponowanym zakresem prac.</p>
-          <form class="mini-form" action="#" method="post" name="quick_form" data-form-demo>
+          <form class="mini-form" action="https://formsubmit.co/biuro@buzzer-zabezpieczenia.com.pl" method="post" name="quick_form">
+            <input type="hidden" name="_subject" value="Nowe zapytanie ze strony BUZZER - Strona glowna">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="https://buzzer-zabezpieczenia.pl/dziekujemy.html">
             <label for="q_name">Imię</label>
             <input id="q_name" type="text" name="imie" placeholder="Imię" required>
             <label for="q_phone">Telefon</label>
@@ -89,8 +94,7 @@
             <label for="q_desc">Opis potrzeb</label>
             <textarea id="q_desc" name="opis" rows="4" placeholder="Np. biuro 120 m2, alarm + monitoring + sieć Wi-Fi"></textarea>
             <button class="btn btn-primary" type="submit" data-track="hero_form_submit">Wyślij zapytanie</button>
-            <p class="help">To wersja demonstracyjna. Na produkcji formularz podłącz do API/CRM.</p>
-            <div class="status" role="status" aria-live="polite" data-form-status></div>
+            <p class="help">Po wysłaniu formularza wrócimy z kontaktem najszybciej jak to możliwe.</p>
           </form>
         </aside>
       </div>

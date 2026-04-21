@@ -36,26 +36,4 @@
     });
   });
 
-  document.querySelectorAll('form[data-form-demo]').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-
-      track('lead_form_submit', {
-        form_name: form.getAttribute('name') || 'lead_form'
-      });
-
-      var status = form.querySelector('[data-form-status]');
-      if (status) {
-        status.classList.add('show');
-        status.textContent = 'Dziekujemy. Formularz testowy zostal przyjety. Na produkcji podlacz API lub CRM.';
-      }
-
-      form.reset();
-    });
-  });
 })();
