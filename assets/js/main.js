@@ -36,4 +36,55 @@
     });
   });
 
+  var lightbox = document.querySelector('[data-lightbox]');
+  var lightboxImage = document.querySelector('[data-lightbox-image]');
+  var lightboxClose = document.querySelector('[data-lightbox-close]');
+  var galleryImages = document.querySelectorAll('.realizacje-grid img');
+
+  if (lightbox && lightboxImage && galleryImages.length) {
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('hidden', '');
+      document.body.style.overflow = '';
+    }
+
+    galleryImages.forEach(function (img) {
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Powieksz zdjecie realizacji');
+
+      function openLightbox() {
+        lightboxImage.src = img.currentSrc || img.src;
+        lightboxImage.alt = img.alt || '';
+        lightbox.removeAttribute('hidden');
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      img.addEventListener('click', openLightbox);
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox();
+        }
+      });
+    });
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightbox);
+    }
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+  }
+
 })();
