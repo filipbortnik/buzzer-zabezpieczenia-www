@@ -1,12 +1,12 @@
 :root {
-  --bg: #0f172a;
-  --bg-soft: #111f3f;
+  --bg: #203050;
+  --bg-soft: #202040;
   --surface: #ffffff;
   --ink: #0b1020;
   --muted: #4b5563;
   --line: #dbe3ef;
-  --brand: #ff5f1f;
-  --brand-ink: #1f120b;
+  --brand: #c01030;
+  --brand-ink: #2a0c14;
   --ok: #1f9d55;
   --radius: 16px;
   --shadow: 0 12px 30px rgba(6, 16, 44, 0.15);
@@ -29,7 +29,7 @@ img { max-width: 100%; display: block; }
   left: -9999px;
   top: 8px;
   background: #ffffff;
-  color: #0f172a;
+  color: var(--bg);
   border: 1px solid #cfd8e6;
   padding: 8px 12px;
   border-radius: 10px;
@@ -50,7 +50,7 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(15, 23, 42, 0.92);
+  background: rgba(32, 48, 80, 0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
 .btn-primary {
   background: var(--brand);
   color: #fff;
-  box-shadow: 0 10px 24px rgba(255, 95, 31, 0.25);
+  box-shadow: 0 10px 24px rgba(192, 16, 48, 0.3);
 }
 
 .btn-primary:hover { filter: brightness(1.04); }
@@ -131,7 +131,7 @@ summary:focus-visible {
 
 .mobile-menu {
   display: none;
-  background: #0f172a;
+  background: var(--bg);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -147,9 +147,9 @@ summary:focus-visible {
 .hero {
   color: #fff;
   background:
-    radial-gradient(circle at 20% 20%, rgba(255, 95, 31, 0.24), transparent 35%),
-    radial-gradient(circle at 80% 60%, rgba(52, 107, 255, 0.2), transparent 40%),
-    linear-gradient(160deg, #0f172a, #111f3f 70%);
+    radial-gradient(circle at 20% 20%, rgba(192, 16, 48, 0.24), transparent 35%),
+    radial-gradient(circle at 80% 60%, rgba(78, 106, 156, 0.24), transparent 40%),
+    linear-gradient(160deg, #203050, #202040 70%);
   padding: 52px 0 44px;
 }
 
@@ -335,7 +335,7 @@ section {
 .faq p { color: var(--muted); margin-bottom: 0; }
 
 .cta-band {
-  background: linear-gradient(135deg, #111f3f, #0d1428);
+  background: linear-gradient(135deg, #203050, #202040);
   color: #e7eeff;
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.12);
