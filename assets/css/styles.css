@@ -64,9 +64,18 @@ img { max-width: 100%; display: block; }
 }
 
 .brand {
-  font-weight: 800;
-  letter-spacing: 0.3px;
-  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+.brand img {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 
 .menu {
@@ -434,6 +443,7 @@ section {
 @media (min-width: 860px) {
   .menu, .nav-cta { display: flex; }
   .mobile-toggle, .mobile-menu, .sticky-mobile { display: none; }
+  .brand img { height: 36px; }
   .hero-grid { grid-template-columns: 1.1fr .9fr; align-items: start; }
   .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
