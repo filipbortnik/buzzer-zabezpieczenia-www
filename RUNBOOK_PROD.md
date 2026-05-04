@@ -194,8 +194,15 @@ git reset --hard <HASH_POPRZEDNIEGO_COMMITA>
 
 ## 14) Bezpieczeństwo dostępu (SSH)
 - Logowanie działa kluczem SSH.
+- Użytkownik SSH (aktualnie): `root`
+- Host SSH: `87.106.57.0`
 - Klucz prywatny lokalnie: `~/.ssh/buzzer_vps`
 - Publiczny klucz został dodany w home.pl przy konfiguracji VPS.
+
+Przykład logowania z Windows PowerShell:
+```powershell
+ssh -i $env:USERPROFILE\.ssh\buzzer_vps root@87.106.57.0
+```
 
 Rekomendacja:
 - Nie używać hasła root do codziennej pracy.
